@@ -1,11 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 body {
-  background-color: rgba(0, 0, 0, 0.24);
   background-color: rgba(0, 0, 0);
   margin: 0;
   padding: 0;
-  font-family: Helvetica, "Liberation Sans", Arial, sans-serif;
+  /* font-family: Helvetica, "Liberation Sans", Arial, sans-serif; */
   font-size: 16px;
   font-weight: 400;
   line-height: 1.7;
   color: #c5c5c5;
+  background: #1a1a1a;
+}
+
+nav {
+  margin-top: 1%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2% 20px 0;
+}
+
+nav div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav a {
+  color: #c5c5c5;
+  text-decoration: none;
+}
+
+.nav-title {
+  font-weight: 600;
+  font-size: 35px;
+}
+#nav-links {
+  font-family: "Roboto Mono", monospace;
+  width: 60%;
+  display: none;
+  justify-content: space-between;
+}
+
+.nav-toggle:hover {
+  cursor: pointer;
+}
+
+.nav-toggle hr {
+  width: 30px;
+}
+
+@media screen and (min-width: 769px) {
+  #nav-links {
+    display: flex;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
 }
