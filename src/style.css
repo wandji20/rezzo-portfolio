@@ -27,32 +27,50 @@ nav div {
 nav a {
   color: #c5c5c5;
   text-decoration: none;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 500;
 }
 
 .nav-title {
   font-weight: 600;
   font-size: 35px;
 }
-#nav-links {
-  font-family: "Roboto Mono", monospace;
-  width: 60%;
+
+.nav-links {
   display: none;
+  width: 60%;
+  font-family: "Roboto Mono", monospace;
+  transition: 0.5s;
+}
+
+.nav-links-sm {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  height: 50vh;
+  border: 2px solid green;
+  transition: 0.5s;
 }
 
 .nav-toggle:hover {
   cursor: pointer;
 }
 
-.nav-toggle hr {
+.nav-toggle {
   width: 30px;
 }
 
 @media screen and (min-width: 769px) {
-  #nav-links {
+  .nav-links {
     display: flex;
+    justify-content: space-between;
+    width: 60%;
   }
-
   .nav-toggle {
     display: none;
   }
