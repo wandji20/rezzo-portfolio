@@ -1,2 +1,3 @@
-import './style.css'
-console.log('Yoo')
+import './style.css';
+
+console.log('Yoo');
