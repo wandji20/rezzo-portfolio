@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 body {
-  background-color: rgba(0, 0, 0);
   margin: 0;
   padding: 0;
   font-size: 18px;
@@ -9,15 +8,14 @@ body {
   line-height: 1.7;
   color: #c5c5c5;
   background: #1a1a1a;
+  max-width: 100%;
 }
 
 nav {
-  /* position: relative; */
   margin-top: 1%;
   display: flex;
   justify-content: space-between;
   margin: 2% 20px 0;
-  /* z-index: 1; */
 }
 
 nav div {
@@ -108,22 +106,22 @@ nav a:hover {
   margin: 10px auto;
 }
 
-.project article {
+.project-article {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 96%;
+  margin: auto;
 }
 
 .project-article figure {
   width: 100%;
-  background: #fff;
-  height: 200px;
+  /* height: 300px; */
   margin: auto;
 }
 .project-content {
   padding: 10px;
 }
-.project-content h5 {
+.project-article h5 {
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 24px;
@@ -140,6 +138,30 @@ nav a:hover {
   transition: 1s;
 }
 
+/* .figure2 {
+  background: url("./../assets/zattix_store.png");
+} */
+.article-img {
+  max-width: 100%;
+  height: auto;
+  max-height: 360px;
+}
+
+#contact form {
+  width: 90%;
+  margin: auto;
+}
+
+#contact input,
+#contact label {
+  display: block;
+  width: 100%;
+}
+
+footer p {
+  width: fit-content;
+  margin: auto;
+}
 @media screen and (min-width: 769px) {
   .nav-links {
     display: flex;
