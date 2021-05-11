@@ -35,8 +35,10 @@ export default function displayNav(){
       navToggle.innerHTML ='X'
       navTitle.style.display = 'none'
       navLinks.style.display = 'flex'
+      navLinks.style.justifyContent = 'space-between'
       navLinks.style.flexDirection = 'column'
       navLinks.style.width = 'fit-content'
+      navLinks.style.height = '50vh'
       
     }
   })
