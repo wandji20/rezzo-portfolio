@@ -156,27 +156,34 @@ nav a:hover {
   transition: 1s;
 }
 
-/* .figure2 {
-  background: url("./../assets/zattix_store.png");
-} */
 .article-img {
   max-width: 100%;
   height: auto;
   max-height: 360px;
 }
 
-#skills div {
+#skills > div {
   width: 96%;
   margin: auto;
+}
+
+#skills h4 {
+  text-align: center;
 }
 
 .languages {
   display: flex;
   justify-content: center;
 }
-/* .framework,
+.framework,
 .language {
   width: 20%;
+}
+.language h6,
+.framework h6 {
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 1.2em;
 }
 
 .framework div,
@@ -184,19 +191,36 @@ nav a:hover {
   width: 30px;
   height: 30px;
   margin: auto;
+}
+/* .img-fluid {
+  border-radius: 10px;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
 } */
+
+.img-skills {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  margin: auto;
+}
 #contact {
   margin: 20px auto;
 }
 
-ul {
+.icons {
   display: flex;
-  justify-content: space-between;
-  width: 40%;
+  width: 75%;
+  margin: 20px auto;
 }
 
-ul li {
-  list-style: none;
+.main-icons a,
+.icons a {
+  margin-right: 20px;
 }
 
 #contact form {
