@@ -21,7 +21,7 @@ nav {
   overflow-y: hidden;
 }
 #toggle-nav {
-  height: 100vh;
+  height: 97vh;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -109,32 +109,37 @@ nav a:hover {
 #projects {
   margin-top: 20px;
 }
-
+#contact h3,
+#contact hr,
 #projects hr,
 #projects h3 {
   width: 75%;
-  margin: 10px auto;
+  margin: auto;
+}
+#contact h3 {
+  color: #0760fe;
 }
 
 .project-article {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr;
   width: 96%;
   margin: auto;
 }
 
-.project-article figure {
+.project-article div {
   width: 100%;
-  /* height: 300px; */
   margin: auto;
 }
-.project-content {
-  padding: 10px;
-}
-.project-article h5 {
+
+.project-title {
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 24px;
+  width: 96%;
+  margin: 15px auto;
 }
 
 .project-links {
@@ -160,8 +165,18 @@ nav a:hover {
   margin: 20px auto;
 }
 
+ul {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+ul li {
+  list-style: none;
+}
+
 #contact form {
-  width: 90%;
+  width: 75%;
   margin: auto;
 }
 textarea,
@@ -201,7 +216,10 @@ footer p {
   width: fit-content;
   margin: auto;
 }
-@media screen and (min-width: 769px) {
+.bi::after {
+  color: #0760fe;
+}
+@media screen and (min-width: 768px) {
   .nav-links {
     display: flex;
     justify-content: space-between;
@@ -209,5 +227,16 @@ footer p {
   }
   .nav-toggle {
     display: none;
+  }
+
+  .project-article {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+  .project-article div {
+    align-items: center;
+  }
+  .article-img {
+    margin: auto;
   }
 }
