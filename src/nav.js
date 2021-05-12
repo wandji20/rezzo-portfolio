@@ -1,4 +1,10 @@
+import './../assets/zattix_store.png'
+import './../assets/culture.png'
+import './../assets/linters.png'
+import './../assets/todo.png'
+
 export default function displayNav(){
+  const body = document.querySelector('body')
   const nav = document.querySelector('nav')
 
   const navTitle = nav.appendChild(document.createElement('div'))
@@ -23,30 +29,37 @@ export default function displayNav(){
   navToggle.appendChild(document.createElement('hr'))
   navToggle.appendChild(document.createElement('hr'))
 
-  navToggle.addEventListener('click', ()=>{
+  navToggle.addEventListener('click', ()=>{ 
     if (navToggle.innerHTML === 'X'){
-      navTitle.style.display = ''
-      navLinks.style.display = 'none'
-      navToggle.innerHTML = ''
-      navToggle.appendChild(document.createElement('hr'))
-      navToggle.appendChild(document.createElement('hr'))
-      navToggle.appendChild(document.createElement('hr'))
+      navLinks.removeAttribute('id')
+      body.classList.remove('remove-y-scroll')
+      start()
     }else{
+      
+      body.classList.add('remove-y-scroll')
+      navLinks.setAttribute('id', 'toggle-nav')
+
       navToggle.innerHTML ='X'
       navTitle.style.display = 'none'
-      navLinks.style.display = 'flex'
-      navLinks.style.justifyContent = 'space-between'
-      navLinks.style.flexDirection = 'column'
-      navLinks.style.width = 'fit-content'
-      navLinks.style.height = '50vh'
+
       
     }
   })
 }
 
 
-function displaySmNav() {
-  const nav = document.querySelector('nav')
+
+function start() {
+  document.querySelector('nav').innerHTML = ''
+  displayNav()
+  const img1 = document.querySelector('.img1')
+  img1.src = './../assets/culture.png'
+  const img2 = document.querySelector('.img2')
+  img2.src = './../assets/zattix_store.png'
+  const img3 = document.querySelector('.img3')
+  img3.src = './../assets/todo.png'
+  const img4 = document.querySelector('.img4')
+  img4.src = './../assets/linters.png'
 }
 
 

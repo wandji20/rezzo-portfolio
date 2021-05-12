@@ -17,6 +17,16 @@ nav {
   justify-content: space-between;
   margin: 2% 20px 0;
 }
+.remove-y-scroll {
+  overflow-y: hidden;
+}
+#toggle-nav {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+}
 
 nav div {
   margin-top: auto;
@@ -146,16 +156,45 @@ nav a:hover {
   height: auto;
   max-height: 360px;
 }
+#contact {
+  margin: 20px auto;
+}
 
 #contact form {
   width: 90%;
   margin: auto;
 }
-
+textarea,
 #contact input,
 #contact label {
   display: block;
   width: 100%;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-family: "Roboto Mono", monospace;
+  margin: 5px auto;
+  box-shadow: none;
+}
+
+#contact label {
+  font-weight: 600;
+  color: #0760fe;
+}
+
+#textarea {
+  width: 99%;
+}
+
+#contact input {
+  border-bottom: solid;
+  padding: 5px 0;
+}
+
+.submit-btn {
+  width: 100%;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 600;
 }
 
 footer p {
