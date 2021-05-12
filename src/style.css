@@ -132,6 +132,23 @@ nav a:hover {
   margin: auto;
 }
 
+.stack-list {
+  display: flex;
+  /* position: absolute; */
+}
+.stack-list button {
+  margin-right: 20px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  transition: 0.5s;
+}
+
+.stack-list button:hover {
+  color: #0760fe;
+  background-color: #1a1a1a;
+}
+
 .project-article div {
   width: 100%;
   margin: auto;
@@ -273,7 +290,7 @@ footer p {
 .github-icon {
   color: #0760fe;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 600px) {
   .nav-links {
     display: flex;
     justify-content: space-between;
