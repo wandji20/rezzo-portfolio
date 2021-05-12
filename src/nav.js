@@ -20,12 +20,11 @@ export default function displayNav(){
   skillsLink.innerHTML = 'Skills'
   const contactLink = navLinks.appendChild(document.createElement('a'))
   contactLink.innerHTML = 'Contact'
-
+  
   const navToggle = nav.appendChild(document.createElement('div'))
   navToggle.classList.add('nav-toggle')
-  navToggle.appendChild(document.createElement('hr'))
-  navToggle.appendChild(document.createElement('hr'))
-  navToggle.appendChild(document.createElement('hr'))
+  let toggleIcon = navToggle.appendChild(document.createElement('i'))
+  toggleIcon.setAttribute('class','bi bi-list')
 
   navToggle.addEventListener('click', ()=>{ 
     if (navToggle.innerHTML === 'X'){
