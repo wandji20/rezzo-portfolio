@@ -85,7 +85,7 @@ nav a:hover {
   margin-right: 10px;
   margin-left: 10px;
 }
-
+#skills h3,
 #projects h2,
 #projects h3,
 #contact h3,
@@ -114,6 +114,8 @@ nav a:hover {
 #projects {
   margin-top: 20px;
 }
+#skills h3,
+#skills hr,
 #contact h3,
 #contact hr,
 #projects hr,
@@ -162,6 +164,27 @@ nav a:hover {
   height: auto;
   max-height: 360px;
 }
+
+#skills div {
+  width: 96%;
+  margin: auto;
+}
+
+.languages {
+  display: flex;
+  justify-content: center;
+}
+/* .framework,
+.language {
+  width: 20%;
+}
+
+.framework div,
+.language div {
+  width: 30px;
+  height: 30px;
+  margin: auto;
+} */
 #contact {
   margin: 20px auto;
 }
