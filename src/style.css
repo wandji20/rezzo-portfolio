@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   font-size: 18px;
   font-weight: 400;
@@ -142,8 +142,6 @@ nav a:hover {
 .project-article {
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-columns: 1fr; */
   width: 96%;
   margin: auto;
 }
@@ -189,7 +187,7 @@ nav a:hover {
   max-width: 100%;
   height: auto;
   max-height: 360px;
-  box-shadow: 0px 0px 20px #c5c5c5;
+  box-shadow: 0 0 20px #c5c5c5;
 }
 
 .framework div,
@@ -239,7 +237,8 @@ nav a:hover {
 .icons {
   display: flex;
   width: 75%;
-  margin: 20px auto;
+
+  /* margin: 20px auto; */
 }
 
 #contact form {
@@ -280,6 +279,10 @@ textarea,
   font-weight: 600;
 }
 
+.submit-btn:hover {
+  cursor: pointer;
+}
+
 footer p {
   width: fit-content;
   margin: auto;
@@ -297,6 +300,10 @@ footer p {
   color: #0760fe;
 }
 
+.contact-text {
+  display: none;
+}
+
 @media screen and (min-width: 600px) {
   .nav-links {
     display: flex;
@@ -307,6 +314,7 @@ footer p {
   .nav-toggle {
     display: none;
   }
+
   .main h2,
   #skills h3,
   #projects h2,
@@ -319,38 +327,55 @@ footer p {
     font-size: 35px;
   }
 
-  .project-article {
-    /* grid-template-columns: 1fr 1fr;
-    grid-gap: 20px; */
-    /* flex-direction: row;
-    justify-content: space-around; */
-  }
-
   .article-img {
     margin: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .contact-details {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .contact-text {
+    width: 75%;
+    margin: 20px auto;
+    display: block;
+    font-family: "Roboto Mono", monospace;
+    font-size: 25px;
+  }
+
+  .contact-details span {
+    display: block;
+  }
+
+  #skills {
+    margin-top: 30px;
+  }
+
   article {
     margin-top: 35px;
   }
+
   .project-article {
-    /* grid-template-columns: 1fr 1fr;
-    grid-gap: 20px; */
     flex-direction: row;
     justify-content: space-between;
   }
+
   .odd {
     flex-direction: row-reverse;
   }
+
   .project-article div {
     align-items: center;
     width: 93%;
   }
 }
+
 @media screen and (min-width: 998px) {
   body {
     font-size: 20px;
+    width: 95%;
   }
 }
