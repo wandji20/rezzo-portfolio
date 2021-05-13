@@ -53,6 +53,7 @@ export default function displayNav() {
       navToggle.appendChild(toggleIcon);
       navLinks.removeAttribute('id');
       body.classList.remove('remove-y-scroll');
+      // eslint-disable-next-line no-use-before-define
       start();
     }
   });

@@ -12,14 +12,15 @@ body {
 }
 
 nav {
-  margin-top: 1%;
   display: flex;
   justify-content: space-between;
-  margin: 2% 20px 0;
+  margin: 2% 20px 0 20px;
 }
+
 .remove-y-scroll {
   overflow-y: hidden;
 }
+
 #toggle-nav {
   height: 97vh;
   display: flex;
@@ -37,6 +38,17 @@ nav a {
   color: #c5c5c5;
   text-decoration: none;
   transition: 0.5s;
+}
+
+.project-links a {
+  color: #0760fe;
+  text-decoration: none;
+  transition: 1s;
+}
+
+.main-icons a,
+.icons a {
+  margin-right: 20px;
 }
 
 nav a:hover {
@@ -66,12 +78,12 @@ nav a:hover {
   transition: 1s;
 }
 
-.nav-toggle:hover {
-  cursor: pointer;
-}
-
 .nav-toggle {
   width: 30px;
+}
+
+.nav-toggle:hover {
+  cursor: pointer;
 }
 
 .nav-toggle i {
@@ -85,11 +97,12 @@ nav a:hover {
   margin-right: 10px;
   margin-left: 10px;
 }
+
+.main h2,
 #skills h3,
 #projects h2,
 #projects h3,
-#contact h3,
-.main h2 {
+#contact h3 {
   font-family: "Roboto Mono", monospace;
   color: #0760fe;
   font-weight: 500;
@@ -111,9 +124,11 @@ nav a:hover {
   display: flex;
   flex-direction: column;
 }
+
 #projects {
   margin-top: 20px;
 }
+
 #skills h3,
 #skills hr,
 #contact h3,
@@ -123,6 +138,7 @@ nav a:hover {
   width: 75%;
   margin: auto;
 }
+
 .project-article {
   /* display: flex;
   flex-direction: column; */
@@ -134,8 +150,10 @@ nav a:hover {
 
 .stack-list {
   display: flex;
+
   /* position: absolute; */
 }
+
 .stack-list button {
   margin-right: 20px;
   border: none;
@@ -167,16 +185,17 @@ nav a:hover {
   justify-content: space-between;
 }
 
-.project-links a {
-  color: #0760fe;
-  text-decoration: none;
-  transition: 1s;
-}
-
 .article-img {
   max-width: 100%;
   height: auto;
   max-height: 360px;
+}
+
+.framework div,
+.language div {
+  width: 30px;
+  height: 30px;
+  margin: auto;
 }
 
 #skills > div {
@@ -192,10 +211,12 @@ nav a:hover {
   display: flex;
   justify-content: center;
 }
+
 .framework,
 .language {
   width: 20%;
 }
+
 .language h6,
 .framework h6 {
   text-align: center;
@@ -203,12 +224,6 @@ nav a:hover {
   margin-bottom: 1.2em;
 }
 
-.framework div,
-.language div {
-  width: 30px;
-  height: 30px;
-  margin: auto;
-}
 /* .img-fluid {
   border-radius: 10px;
   max-height: 100%;
@@ -225,6 +240,7 @@ nav a:hover {
   border-radius: 10px;
   margin: auto;
 }
+
 #contact {
   margin: 20px auto;
 }
@@ -235,15 +251,11 @@ nav a:hover {
   margin: 20px auto;
 }
 
-.main-icons a,
-.icons a {
-  margin-right: 20px;
-}
-
 #contact form {
   width: 75%;
   margin: auto;
 }
+
 textarea,
 #contact input,
 #contact label {
@@ -281,32 +293,46 @@ footer p {
   width: fit-content;
   margin: auto;
 }
+
 .linkedin-icon {
   color: #c5c5c5;
 }
+
 .twitter-icon {
   color: #1da1f2;
 }
+
 .github-icon {
   color: #0760fe;
 }
+
 @media screen and (min-width: 600px) {
   .nav-links {
     display: flex;
     justify-content: space-between;
     width: 60%;
   }
+
   .nav-toggle {
     display: none;
+  }
+
+  /* #home {
+    height: 40vh;
+  } */
+  .main {
+    height: 40vh;
   }
 
   .project-article {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
+
   .project-article div {
     align-items: center;
   }
+
   .article-img {
     margin: auto;
   }
