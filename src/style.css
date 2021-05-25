@@ -142,6 +142,7 @@ nav a:hover {
 .project-article {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 96%;
   margin: auto;
 }
@@ -174,8 +175,10 @@ nav a:hover {
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 24px;
-  width: 96%;
-  margin: 15px auto;
+  /* width: 96%; */
+  /* margin: 15px auto; */
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .project-links {
@@ -356,6 +359,8 @@ footer p {
 
   article {
     margin-top: 35px;
+    /* display: flex;
+    flex-direction: column; */
   }
 
   .project-article {
@@ -369,7 +374,10 @@ footer p {
 
   .project-article div {
     align-items: center;
-    width: 93%;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
