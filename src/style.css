@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
+/* @import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
 body {
+  font-family: "Archivo Narrow", sans-serif;
   margin: auto;
   padding: 0;
   font-size: 18px;
@@ -41,9 +45,10 @@ nav a {
 }
 
 .project-links a {
-  color: #0760fe;
+  color: #c5c5c5;
   text-decoration: none;
   transition: 1s;
+  margin-right: 25px;
 }
 
 .main-icons a,
@@ -55,6 +60,10 @@ nav a:hover {
   cursor: pointer;
   font-size: 25px;
   font-weight: 500;
+}
+
+.project-links a:hover {
+  color: #0760fe;
 }
 
 .nav-title {
@@ -177,16 +186,10 @@ nav a:hover {
   margin-bottom: 15px;
 }
 
-.project-links {
-  display: flex;
-  justify-content: space-between;
-}
-
 .article-img {
   max-width: 100%;
   height: auto;
   max-height: 360px;
-  box-shadow: 0 0 20px #c5c5c5;
 }
 
 .framework div,
@@ -196,38 +199,17 @@ nav a:hover {
   margin: auto;
 }
 
-#skills > div {
+.skills {
+  display: flex;
   width: 96%;
   margin: auto;
-  font-size: 25px;
+  font-size: 17px;
 }
 
-#skills h4 {
-  text-align: center;
-}
-
-.languages {
+.skills div {
+  width: 35%;
   display: flex;
-  justify-content: center;
-}
-
-.framework,
-.language {
-  width: 20%;
-}
-
-.language h6,
-.framework h6 {
-  text-align: center;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
-}
-
-.img-skills {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 10px;
-  margin: auto;
+  flex-direction: column;
 }
 
 #contact {
@@ -286,15 +268,13 @@ footer p {
   margin: auto;
 }
 
-.linkedin-icon {
+.icon {
   color: #c5c5c5;
+  transition: 0.5s;
 }
 
-.twitter-icon {
-  color: #1da1f2;
-}
-
-.github-icon {
+.icon:hover {
+  /* cursor: pointer; */
   color: #0760fe;
 }
 
@@ -360,6 +340,10 @@ footer p {
 
   #skills {
     margin-top: 30px;
+  }
+
+  .skills div {
+    width: 20%;
   }
 
   article {
