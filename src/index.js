@@ -10,7 +10,7 @@ import '../assets/html.png';
 import '../assets/ruby.jpeg';
 import '../assets/rubyrails.png';
 import '../assets/js.jpg';
-import '../assets/tic1.png';
+import '../assets/linters.png.';
 
 require('bootstrap-icons/font/bootstrap-icons.css');
 
