@@ -354,6 +354,7 @@ footer p {
   }
 
   .skills div {
+    align-items: flex-start;
     width: 20%;
   }
 
