@@ -204,6 +204,7 @@ nav a:hover {
 
 .skills {
   display: flex;
+  justify-content: center;
   width: 96%;
   margin: auto;
   font-size: 17px;
@@ -346,6 +347,7 @@ footer p {
   }
 
   .skills {
+    justify-content: start;
     width: 90%;
     font-size: 20px;
   }
