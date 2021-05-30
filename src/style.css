@@ -204,7 +204,6 @@ nav a:hover {
 
 .skills {
   display: flex;
-  justify-content: center;
   width: 96%;
   margin: auto;
   font-size: 17px;
