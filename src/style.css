@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
 
 body {
+  font-family: "Archivo Narrow", sans-serif;
   margin: auto;
   padding: 0;
   font-size: 18px;
@@ -15,6 +17,11 @@ nav {
   display: flex;
   justify-content: space-between;
   margin: 2% 20px 0 20px;
+}
+
+#home {
+  width: 96%;
+  padding-left: 5px;
 }
 
 .remove-y-scroll {
@@ -41,9 +48,10 @@ nav a {
 }
 
 .project-links a {
-  color: #0760fe;
+  color: #c5c5c5;
   text-decoration: none;
   transition: 1s;
+  margin-right: 25px;
 }
 
 .main-icons a,
@@ -55,6 +63,10 @@ nav a:hover {
   cursor: pointer;
   font-size: 25px;
   font-weight: 500;
+}
+
+.project-links a:hover {
+  color: #0760fe;
 }
 
 .nav-title {
@@ -142,14 +154,13 @@ nav a:hover {
 .project-article {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 96%;
   margin: auto;
 }
 
 .stack-list {
   display: flex;
-
-  /* position: absolute; */
 }
 
 .stack-list button {
@@ -174,20 +185,14 @@ nav a:hover {
   font-family: "Roboto Mono", monospace;
   font-weight: 500;
   font-size: 24px;
-  width: 96%;
-  margin: 15px auto;
-}
-
-.project-links {
-  display: flex;
-  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 .article-img {
   max-width: 100%;
   height: auto;
   max-height: 360px;
-  box-shadow: 0 0 20px #c5c5c5;
 }
 
 .framework div,
@@ -197,37 +202,19 @@ nav a:hover {
   margin: auto;
 }
 
-#skills > div {
-  width: 96%;
-  margin: auto;
-}
-
-#skills h4 {
-  text-align: center;
-}
-
-.languages {
+.skills {
   display: flex;
   justify-content: center;
-}
-
-.framework,
-.language {
-  width: 20%;
-}
-
-.language h6,
-.framework h6 {
-  text-align: center;
-  margin-top: 1.2em;
-  margin-bottom: 1.2em;
-}
-
-.img-skills {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 10px;
+  width: 96%;
   margin: auto;
+  font-size: 17px;
+}
+
+.skills div {
+  width: 35%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #contact {
@@ -237,8 +224,6 @@ nav a:hover {
 .icons {
   display: flex;
   width: 75%;
-
-  /* margin: 20px auto; */
 }
 
 #contact form {
@@ -288,15 +273,13 @@ footer p {
   margin: auto;
 }
 
-.linkedin-icon {
+.icon {
   color: #c5c5c5;
+  transition: 0.5s;
 }
 
-.twitter-icon {
-  color: #1da1f2;
-}
-
-.github-icon {
+.icon:hover {
+  /* cursor: pointer; */
   color: #0760fe;
 }
 
@@ -330,6 +313,16 @@ footer p {
   .article-img {
     margin: auto;
   }
+
+  .project-links {
+    width: 98%;
+  }
+
+  .framework div,
+  .language div {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -354,8 +347,20 @@ footer p {
     margin-top: 30px;
   }
 
+  .skills {
+    justify-content: start;
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .skills div {
+    align-items: flex-start;
+    width: 20%;
+  }
+
   article {
     margin-top: 35px;
+    margin-bottom: 35px;
   }
 
   .project-article {
@@ -369,7 +374,10 @@ footer p {
 
   .project-article div {
     align-items: center;
-    width: 93%;
+    width: 100%;
+    max-width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
   }
 }
 
